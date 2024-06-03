@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className="navbar bg-teal-700">
       <div className="flex-1">
-        <a className="btn btn-ghost text-2xl font-bold text-white">CHATTERY</a>
+        <Link to={"/"} className="btn btn-ghost text-2xl font-bold text-white">
+          CHATTERY
+        </Link>
       </div>
       <div className="flex gap-2 px-2">
         <button className="btn btn-ghost font-bold text-slate-50">
