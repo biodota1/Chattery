@@ -6,6 +6,14 @@ export default function Navbar() {
       <div className="flex-1">
         <a className="btn btn-ghost text-2xl font-bold text-white">CHATTERY</a>
       </div>
+      <div className="flex gap-2 px-2">
+        <button className="btn btn-ghost font-bold text-slate-50">
+          Sign in
+        </button>
+        <button className="btn bg-teal-900 font-bold text-slate-50 hover:bg-teal-900">
+          Sign up
+        </button>
+      </div>
       <div className="flex-none gap-2">
         <div className="dropdown dropdown-end">
           <div

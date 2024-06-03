@@ -6,6 +6,8 @@ import "./index.css";
 import Root from "./routes/Root";
 import ErrorPage from "./ErrorPage";
 import Home from "./routes/Home";
+import Message from "./routes/Message";
+import MessageBox from "./routes/MessageBox";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        element: <Message />,
+        children: [
+          {
+            path: "/message",
+            element: <MessageBox />,
+          },
+        ],
       },
     ],
   },
