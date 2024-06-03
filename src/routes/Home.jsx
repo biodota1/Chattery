@@ -12,7 +12,7 @@ export default function Home() {
         <button
           className="btn w-36 text-lg text-slate-100 font-bold ml-auto mr-32 bg-slate-800 bg-transparent border-teal-900 border-4 hover:bg-teal-600"
           onClick={() => {
-            navigate("/message");
+            navigate("/signup");
           }}
         >
           Get Started

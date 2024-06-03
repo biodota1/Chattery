@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <div className="navbar bg-teal-700">
       <div className="flex-1">
@@ -10,10 +11,16 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex gap-2 px-2">
-        <button className="btn btn-ghost font-bold text-slate-50">
+        <button
+          className="btn btn-ghost font-bold text-slate-50"
+          onClick={() => navigate("/signin")}
+        >
           Sign in
         </button>
-        <button className="btn bg-teal-900 font-bold text-slate-50 hover:bg-teal-900">
+        <button
+          className="btn bg-teal-900 font-bold text-slate-50 hover:bg-teal-900"
+          onClick={() => navigate("/signup")}
+        >
           Sign up
         </button>
       </div>

@@ -8,11 +8,13 @@ import ErrorPage from "./ErrorPage";
 import Home from "./routes/Home";
 import Message from "./routes/Message";
 import MessageBox from "./routes/MessageBox";
+import Signin from "./routes/Signin";
+import Signup from "./routes/Signup";
 
 const router = createBrowserRouter([
   {
     element: <Root />,
-    errorElement: <ErrorPage />,
+    // errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -27,6 +29,8 @@ const router = createBrowserRouter([
           },
         ],
       },
+      { path: "signin", element: <Signin /> },
+      { path: "signup", element: <Signup /> },
     ],
   },
 ]);
